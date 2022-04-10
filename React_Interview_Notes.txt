@@ -1,0 +1,26 @@
+Reasons for using React
+- Code reusability with React components
+- Ease of frontend development
+- Using Virtual DOM, even large React apps are performant.
+- Convenient JSX syntax
+- We can do client side state management using Redux.
+- Build tools makes maintenance of code so much easier.
+- Using well tested React libraries we also take care of the security concerns.
+
+
+2 ways to create React applications
+
+1. Simple React application: 
+	- Here we keep things simple and just use HTML, CSS and JS/JSX
+	- We import the 3 libraries(React, ReactDOM and Babel for JSX)
+2. Complex React applications:
+	- Here we use build tools like create-react-app, webpack, cssLoaders, styleLoaders, transpiler (babel),minifies, compression libraries.
+	- Here we utilize nodejs to facilitate the development and it monitors the changes and apllies them dynamically.
+	
+	
+Why it is important to mention unique keys when creating multpile React components using a loop?
+
+
+What is special about React Form?
+Controlled components during form submit.
+
