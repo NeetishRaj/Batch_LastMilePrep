@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <ul id="list_container">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+        <li>List item 4</li>
+        <li>List item 5</li>
+        <li>List item 6</li>
+        <li>List item 7</li>
+        <li>List item 8</li>
+        <li>List item 9</li>
+        <li>List item 10</li>
+        <li>List item 11</li>
+        <li>List item 12</li>
+        <li>List item 13</li>
+        <li>List item 14</li>
+        <li>List item 15</li>
+        <li>List item 16</li>
+        <li>List item 17</li>
+        <li>List item 18</li>
+        <li>List item 19</li>
+        <li>List item 20</li>
+    </ul>
+    <script>
+        function init() {
+        
+            // I want to have an eventListener for all the list items.
+            // Clicking on the list item should alert the correponding textContent
+        
+            // LET'DO IT THE BAD WAY
+            // const li_list = document.querySelectorAll('li');
+        
+            // li_list.forEach((li_item) => {
+            //     li_item.addEventListener('click', () => {
+            //         alert("clicked " + li_item.textContent);
+            //         console.log("clicked " + li_item.textContent)
+            //     })
+            // })
+
+
+            // LET'S DO IT IN A GOOD WAY, using Event Delegation
+            const list_container = document.getElementById('list_container');
+
+            list_container.addEventListener('click', (event) => {
+                alert("clicked " + event.target.textContent);
+                console.log("clicked " + event.target.textContent)
+            }, false)
+        
+        }
+
+
+        window.onload = init;
+        </script>
+
+</body>
+</html>

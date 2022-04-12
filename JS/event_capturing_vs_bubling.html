@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grand-parent {
+            height: 150px;
+            width: 150px;
+    
+            background-color: red;
+        }
+
+        .parent {
+            height: 100px;
+            width: 100px;
+    
+            background-color: green;
+        }
+
+        .child {
+            height: 50px;
+            width: 50px;
+    
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="grand-parent">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+
+<script>
+
+
+function init() {
+    const grandParent = document.querySelector('.grand-parent');
+    const parent = document.querySelector('.parent');
+    const child = document.querySelector('.child');
+
+
+    grandParent.addEventListener('click', () => {
+        console.log("Grand parent clicked!")   
+    }, false);
+
+    parent.addEventListener('click', () => {
+        console.log("Parent clicked!")   
+    }, false);
+
+    child.addEventListener('click', () => {
+        console.log("Child clicked!")   
+    }, false);
+
+    // When useCapture = false it means there is event-bubbling
+    // When useCapture = true it means there is event-capturing
+
+}
+
+window.onload = init;
+    
+</script>
+
+</body>
+</html>
