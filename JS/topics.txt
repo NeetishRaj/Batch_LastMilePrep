@@ -3,3 +3,5 @@ Event Delegation
 EventCapture VS Bubbling
 Prototype
 Data Manipulation of Users Array
+Arrow this binding
+Understanding closures through Memoization.

@@ -1,0 +1,27 @@
+- What are React Hooks?
+Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
+
+Classes vs Hooks example: https://blog.bitsrc.io/6-reasons-to-use-react-hooks-instead-of-classes-7e3ee745fe04
+
+- Why React Hooks?
+https://stackoverflow.com/questions/58374623/when-to-use-react-hooks
+
+
+- What are 2 important rules of Hooks in React?
+- Hooks are JavaScript functions, but they impose two additional rules:
+    1. Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions.
+    2. Only call Hooks from React function components. Don’t call Hooks from regular JavaScript functions. (There is just one other valid place to call Hooks — your own custom Hooks. We’ll learn about them in a moment.)
+
+- Built-in hooks 
+    - useState()
+    - useEffect()
+    - useContext()
+
+- Custom Hooks in React
+
+
+
+Important links
+https://reactjs.org/docs/hooks-overview.html
+Good intro video by Dan Abramov: https://youtu.be/dpw9EHDh2bM
+

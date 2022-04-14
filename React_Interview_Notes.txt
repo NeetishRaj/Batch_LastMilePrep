@@ -19,8 +19,42 @@ Reasons for using React
 	
 	
 Why it is important to mention unique keys when creating multpile React components using a loop?
-
+- So that React can uniquely identiy the list items.
 
 What is special about React Form?
 Controlled components during form submit.
 
+
+- What are React Hooks?
+Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
+
+
+- Why React Hooks?
+Classes vs Hooks example: https://blog.bitsrc.io/6-reasons-to-use-react-hooks-instead-of-classes-7e3ee745fe04
+
+- When to use React Hooks?
+https://stackoverflow.com/questions/58374623/when-to-use-react-hooks
+
+
+- What are 2 important rules of Hooks in React?
+- Hooks are JavaScript functions, but they impose two additional rules:
+    1. Only call Hooks at the top level. Don’t call Hooks inside loops, conditions, or nested functions.
+    2. Only call Hooks from React function components. Don’t call Hooks from regular JavaScript functions. (There is just one other valid place to call Hooks — your own custom Hooks. We’ll learn about them in a moment.)
+
+- Built-in hooks 
+    - useState()
+    - useEffect(): https://reactjs.org/docs/hooks-effect.html
+    - useContext()
+
+
+What does useEffect do? 
+By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates.
+
+Does useEffect run after every render? 
+Yes! By default, it runs both after the first render and after every update.
+
+Why do we return a function from our useEffect callback? 
+This is the optional cleanup mechanism for effects. Every effect may return a function that cleans up after it. This lets us keep the logic for adding and removing subscriptions close to each other. They’re part of the same effect!
+
+what is the use of second optional argument in useEffect() function?
+In some cases, cleaning up or applying the effect after every render might create a performance problem. You can tell React to skip applying an effect if certain values haven’t changed between re-renders. To do so, pass an array as an optional second argument to useEffect.
