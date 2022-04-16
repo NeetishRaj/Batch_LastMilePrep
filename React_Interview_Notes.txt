@@ -58,3 +58,9 @@ This is the optional cleanup mechanism for effects. Every effect may return a fu
 
 what is the use of second optional argument in useEffect() function?
 In some cases, cleaning up or applying the effect after every render might create a performance problem. You can tell React to skip applying an effect if certain values haven’t changed between re-renders. To do so, pass an array as an optional second argument to useEffect.
+
+
+Why use React Router?
+React routees help to configure propery url paths for our React SPA
+
+https://reactrouter.com/docs/en/v6/getting-started/installation
