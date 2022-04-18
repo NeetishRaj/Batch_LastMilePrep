@@ -64,3 +64,38 @@ Why use React Router?
 React routees help to configure propery url paths for our React SPA
 
 https://reactrouter.com/docs/en/v6/getting-started/installation
+
+
+
+When to use State management in front end application?
+When front application grows big and communicating across components regarding the changed data  becomes challenging then it makes sense to use something like Redux.
+
+What's the benefit of using Redux?
+- Single source of truth
+- On data changes in store, all the subscribed components are notified of the new changes thus they re-render with latest data.
+- Development becomes very easy when using redux and the redux-dev-tools chrome extension.
+
+How Redux works?
+https://react-redux.js.org/api/hooks
+
+https://d33wubrfki0l68.cloudfront.net/01cc198232551a7e180f4e9e327b5ab22d9d14e7/b33f4/assets/images/reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif
+
+
+
+
+What's the use of event.preventDefaults() in onSubmitHandlers of form?
+It prevents the default behaviour of submit button and this prevents page refresh.
+
+
+How does onChange event works for <input> in React?
+Every type the new input is entered by the user it fires a change event using which we capture the new user entered data.
+
+
+
+Does React provide direct access to DOM? If yes How?
+We can create refs and use it to access the actual DOM for that HTML Element.
+https://reactjs.org/docs/forwarding-refs.html
+
+
+What are the situations where you would need to access DOM directly?
+- When need to add onBlur/onFocus capability to non-input html elements like a Div.

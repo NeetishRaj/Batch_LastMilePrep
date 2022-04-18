@@ -8,9 +8,9 @@ const About = () => (
     <hr/>
     <p>This is the about section of the React SPA and it's triggered by using /about route.</p>
 
-    <footer>
+    <div>
       <div>Let's meet the team behind this app: <Link to="/team">Our Team</Link></div>
-    </footer>
+    </div>
   </div>
 );
 

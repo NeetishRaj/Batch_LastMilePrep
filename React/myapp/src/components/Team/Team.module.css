@@ -1,1 +1,25 @@
-.Team {}
+.Team {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Team ol {
+    width: 30%;
+    margin: 0;
+    padding: 20px;
+}
+
+.Team form {
+    border: 1px solid #555;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+
+    padding: 20px;
+}

@@ -1,0 +1,46 @@
+.Home nav {
+
+    box-sizing: border-box;
+    
+    width: 100vw;
+    height: 100px;
+    background-color: beige; 
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: larger;
+    font-weight: 600;
+
+
+    padding: 0 50px;
+
+
+    position: relative;
+
+}
+
+.Home nav span {
+    overflow: hidden;
+}
+
+.Home nav a {
+    text-decoration: none;
+    color: #666;
+    transition: all 0.2s;
+}
+
+.Home nav a:hover {
+    font-size: 24px;
+    text-decoration:underline;
+}
+
+.Home footer {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+
+    
