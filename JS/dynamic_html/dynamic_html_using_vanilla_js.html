@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./users_data.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+
+            background-color: aquamarine;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            overflow: scroll;
+        }
+
+        .user-card {
+            width: 250px;
+            height: 150px;
+
+            padding: 20px;
+            margin: 20px;
+
+            background-color: azure;
+
+            overflow: hidden;
+        }
+
+        .name {
+            font-size: larger;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="user-card">
+        <div class="name">John Doe</div>
+        <div>SpaceX</div>
+        <div>john.doe@spacex.com</div>
+        <div>+91-9898989898</div>
+    </div>
+</div>
+
+    
+<script>
+
+function create_card(user) {
+    const container = document.querySelector('.container');
+
+    // Create a div.user-card and append it to container.
+    // Add the class 'user-card to the div'
+
+    // create div.name inside div.user-card and append it
+    // create company name div inside div.user-card
+    // create email div inside div.user-card
+    // create phone no. div inside div.user-card
+
+    const user_card = document.createElement('DIV');
+    user_card.setAttribute('class', 'user-card');
+    container.appendChild(user_card);  
+
+    const name_div = document.createElement('DIV');
+    name_div.textContent = user.name;
+    name_div.setAttribute('class', 'name');
+    user_card.appendChild(name_div);
+
+    const company_div = document.createElement('DIV');
+    company_div.textContent = user.company;
+    user_card.appendChild(company_div);
+
+    const email_div = document.createElement('DIV');
+    email_div.textContent = user.email;
+    user_card.appendChild(email_div);
+
+    const phone_div = document.createElement('DIV');
+    phone_div.textContent = user.phone;
+    user_card.appendChild(phone_div);
+}
+
+function init() {
+    console.log(users);
+
+
+    users.forEach(user => {
+        create_card(user);
+    });
+
+}
+
+window.onload = init();
+
+</script>
+
+</body>
+</html>

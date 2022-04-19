@@ -5,3 +5,8 @@ Prototype
 Data Manipulation of Users Array
 Arrow this binding
 Understanding closures through Memoization.
+ES6: http://es6-features.org/#ClassDefinition
+Class
+Map and Set
+DOM
+async
