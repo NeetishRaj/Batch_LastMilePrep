@@ -9,4 +9,5 @@ ES6: http://es6-features.org/#ClassDefinition
 Class
 Map and Set
 DOM
-async
+async (asynchronous nature of JS, callbacks, Promise, async-await)
+fetch-api
