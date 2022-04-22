@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { addUser } from '../../redux/userReducer';
 import styles from './Team.module.css';
+import useGetRandomSalutation from '../../Hooks/useGetRandomSalutation';
 
 const Team = () => {
 
@@ -10,11 +11,12 @@ const Team = () => {
   // const [formData, setFormData] = useState({});
   const formData = {};
   const dispatch = useDispatch()
+  const random_salutation = useGetRandomSalutation();
 
   const usersList = users.map((user) => {
     return (
       <li key={user.name}>
-        {user.name}
+        {`${random_salutation}, ${user.name}`}
       </li>
     )
   })

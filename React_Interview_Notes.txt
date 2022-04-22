@@ -99,3 +99,11 @@ https://reactjs.org/docs/forwarding-refs.html
 
 What are the situations where you would need to access DOM directly?
 - When need to add onBlur/onFocus capability to non-input html elements like a Div.
+
+
+Why to create a custom Hook ?
+DRY
+
+What is a custom Hook?
+It's just function with 'use' as prefi in it's name and,
+It may utlize other hooks inside it.
