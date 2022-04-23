@@ -1,0 +1,25 @@
+.CreateShapes {
+    /* background-color: red; */
+
+
+}
+.CreateShapes main{
+
+}
+
+.CreateShapes section {
+    /* border: 10px solid red; */
+}
+
+.CreateShapes aside {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+}
+
+.CreateShapes article {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
